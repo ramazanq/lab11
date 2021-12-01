@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login5</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    input {
+        top: -10px;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        width: 450px;
+        height: 47px;
+        margin: 44px 44px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 9px;
+        padding-left: 25px;
+    }
+</style>
+<header>
+    <p>Your logo</p>
+</header>
+
+<body>
+    <div class="rectangle">
+        <div class="welcome">
+            <p>Welcome to <span class="welcome_lorem">LOREM</span></p>
+        </div>
+        <div class="no_ac">
+            <p> No Account? <br>
+                <span class="welcome_lorem"> <a href="index.html">Sign up</a> </span>
+            </p>
+        </div>
+        <div class="sign_in">
+            <p> Sign in</p>
+        </div>
+        <div class="btns">
+
+            <button class="btns__google" data-onsuccess="onSignIn"> <img class="goo_img"
+                    src="https://img.icons8.com/color/144/000000/google-logo.png" /><a
+                    href="https://yourwebsite.com/callback?code=a-bunch-of-random-characters">Login with
+                    Google</a></button>
+
+            <img class="btns__facebook" cl src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+
+            <img class="btns__iphone" src="https://img.icons8.com/metro/52/000000/mac-os.png" />
+        </div>
+        <div class="form">
+            <form action="/action_page.php">
+                <label for="user_name">Enter your user name or email address</label><br>
+
+                <input type="text" id="username" placeholder="User name or email address"><br>
+                <div id="error"></div><br>
+                <label for="password">Enter your password</label><br>
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required placeholder="password"><br>
+            </form>
+            <div id="forgot">
+                Forgot Password
+            </div>
+            <input class="sign-in" onclick="return detailssubmit()" type="button" value="Sign in">
+        </div>
+
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+
+</html>
