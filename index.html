@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<header>
+    <p>Your logo</p>
+</header>
+<body>      
+    <form action="" name="RegForm" id="form">
+    <div class="rectangle" id="form">
+  
+        <div class="welcome">
+            <p>Welcome to <span class="welcome_lorem">LOREM</span></p>
+        </div>
+        <div class="no_ac">
+         <p> Have you Account? <br>
+            <span class="welcome_lorem"> <a href="index2.html">Sign in</a> </span>
+        </p>  
+        </div>
+        <div class="sign_in">
+            <p>Sign up</p>
+        </div>
+       
+        <div class="form2">
+            
+                <label for="my_form_email">Enter your user name or email address</label><br>
+                <input type="text" class="input1" name="EMail" id="email" required placeholder="User name or email address"><br>
+                <div class="error"></div>
+                <div class="gg">
+                    <div class="user1">
+                         <label for="user_name2">User name</label>
+                <input type="text" id="user_name2" name="Name"   placeholder="User name" required>
+                <div id="error"></div><br>
+                    </div>
+                        <div class="cont1">
+                            <label for="contact-number">Contact</label>
+                        <input type="tel" name="Telephone" id="contact" onkeypress="return onlyNumberKey(event)"  placeholder="Contact Number">
+                        <div id="error"></div><br>
+                </div>
+                </div>
+                <form action="return verifyPassword()">
+                <label  for="password">Enter your password</label><br>
+                <input class="input1"type="password" name="Password" id="password" placeholder="password" required><br>
+                <div id="error"></div></form>
+            <div class="forgot1">
+                Forgot Password
+            </div> 
+            <input class="sign-in"  onclick="return detailssubmit()"   type="submit"value="Sign in">
+        </div>
+</form>
+    </div>
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
